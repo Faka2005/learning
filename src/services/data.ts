@@ -40,36 +40,7 @@ export interface Page {
   path: string;
 }
 
-export interface Recitateur {
-  id: string;
-  name: string;
-  sourate: Sourate[];
-}
 
-export interface Sourate {
-  name: string;
-  url: string;
-}
-
-// Données des récitateurs
-export const Recitateurs: Recitateur[] = [
-  {
-    id: "1",
-    name: "Yasser Al-Dossary",
-    sourate: [
-      { name: "Al-Fatiha", url: "https://example.com/1" },
-      { name: "Al-Baqara", url: "https://example.com/2" },
-    ],
-  },
-  {
-    id: "2",
-    name: "Mishary Rashid Alafasy",
-    sourate: [
-      { name: "Al-Fatiha", url: "https://example.com/1" },
-      { name: "An-Nas", url: "https://example.com/114" },
-    ],
-  },
-];
   
 export const Pages: Page[] = [
     { label: "Home", path: "" },
