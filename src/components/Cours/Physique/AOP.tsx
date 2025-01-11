@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-
+import { useState } from "react";
+import Images from "../../../services/Images";
 const Image=()=>{
   return(<div><img src="./image.png" alt="" /></div>)
 }
@@ -108,6 +108,8 @@ function AOP() {
         <div key={topic.id} id={topic.id} style={{ marginBottom: "20px" }}>
           <h2>{topic.title}</h2>
           {topic.content}
+          <img src="../../../../../files/image/comparateur.png" alt="" />
+          <Images name="image2" />
         </div>
       ))}
     </div>

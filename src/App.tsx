@@ -8,6 +8,7 @@ import FichePage from './components/Principales/Fiches';
 import CourseDetail from './components/Principales/CourseDetails';
 import CourseList from './components/Principales/CourseList';
 import HomeBack from './pages/HomeBack';
+
 function App() {
   return (
     <Router>
