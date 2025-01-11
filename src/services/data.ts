@@ -84,7 +84,8 @@ export const courses: Course[] = [
   { id: 5, theme: 'Electronnique', title: 'Amplificateur opérationnel', description: 'Les différents montages d\'un amplificateur opérationnel.' },
   { id: 6, theme: 'Electronnique',title:'Transistors',description:"Les différents transistors et caractéristique"},
   { id: 7, theme: 'Electronnique',title:'Diode',description:"Les différents types de diodes"},
-  { id: 8, theme: 'Physique',title:'Filtre',description:"Les différents filtre"}
+  { id: 8, theme: 'Physique',title:'Filtre',description:"Les différents filtre"},
+  { id: 9, theme:'Physique' , title:'Formules basiques',description:"Formules à connaitre "}
 ];
 
 export const exercices: Exercise[] = [
