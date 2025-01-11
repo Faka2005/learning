@@ -1,14 +1,12 @@
 import { useState } from "react";
 import Images from "../../../services/Images";
-const Image=()=>{
-  return(<div><img src="./image.png" alt="" /></div>)
-}
+
 // Contenus en tant que composants fonctionnels
 const Comparateurs = () => (
   <div>
     Les comparateurs permettent de comparer deux tensions et de produire un
     signal de sortie en fonction de la comparaison.
-    <Image/>
+    <Images name="comaprateur" />
   </div>
 );
 
@@ -16,6 +14,7 @@ const Suiveurs = () => (
   <div>
     Le suiveur a un gain unitaire. Il est utilisé pour isoler les étages d'un
     montage sans affecter le signal d'entrée.
+    <Images name="suiveur" />
   </div>
 );
 
@@ -23,6 +22,7 @@ const AmplificateurInverseur = () => (
   <div>
     L'amplificateur inverseur produit une inversion de phase et amplifie le
     signal d'entrée selon un facteur déterminé par les résistances.
+    <Images name="amplificateur_inverseur" />
   </div>
 );
 
@@ -30,6 +30,7 @@ const AmplificateurNonInverseur = () => (
   <div>
     L'amplificateur non inverseur amplifie le signal d'entrée sans changer sa
     phase. Il offre un gain positif.
+    <Images name="amplificateur_non_inverseur" />
   </div>
 );
 
@@ -37,6 +38,7 @@ const Soustracteur = () => (
   <div>
     Le soustracteur permet de calculer la différence entre deux signaux
     d'entrée.
+    <Images name="soustracteur" />
   </div>
 );
 
@@ -44,6 +46,7 @@ const Sommateur = () => (
   <div>
     Le sommateur additionne plusieurs signaux d'entrée pour produire un signal
     de sortie unique.
+    <Images name="sommateur" />
   </div>
 );
 
@@ -51,6 +54,7 @@ const Derivateurs = () => (
   <div>
     Le dérivateur calcule la dérivée d'un signal en fonction du temps, utile en
     traitement de signaux.
+    <Images name="derivateur" />
   </div>
 );
 
@@ -108,7 +112,6 @@ function AOP() {
         <div key={topic.id} id={topic.id} style={{ marginBottom: "20px" }}>
           <h2>{topic.title}</h2>
           {topic.content}
-          <Images name="image2" />
         </div>
       ))}
     </div>
