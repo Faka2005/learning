@@ -40,6 +40,17 @@ export interface Page {
   path: string;
 }
 
+// Tableau de formules
+export const formules = [
+  { name: "suiveur", formula: "\\(U_s=U_e\\)"},
+  { name: "amplificateur_non_inverseur", formula: "\\( U_s =(1+\\frac{R_2}{R_1})U_e\\)" },
+  { name: "integrateur", formula: "\\(U_s = -\\frac{1}{RC}\\int U_e(t)dt \\) " },
+  { name: "amplificateur_inverseur", formula: "\\(U_s = -\\frac{R_2}{R_1} U_e \\)" },
+  { name: "sommateur", formula: "\\(U_s = -(U_1+U_2+U_3)\\)" },
+  { name: "soustracteur1", formula: "\\(U_s = \\frac{R_2}{R_1} (U_2-U_1)\\)" },
+  { name: "soustracteur2", formula: "\\(U_s = \\frac{({R_1 +R_2})R_4}{({R_3+R_4})R_1} -U_1\\frac{R_2}{R_1}\\)" },
+  {name:"derivateur",formula:"\\(U_s = -RC \\frac{dU_e(t)}{dt}\\)"},
+];
 
   
 export const Pages: Page[] = [
